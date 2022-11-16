@@ -1,4 +1,4 @@
-model_directive: package://quasistatic_simulator/iiwa_sphere_collision_push.yml
+model_directive: package://quasistatic_simulator/iiwa_sphere_collision_push_no_ground.yml
 robots:
   -
     name: iiwa
