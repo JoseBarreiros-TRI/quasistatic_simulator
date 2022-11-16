@@ -1,7 +1,7 @@
 directives:
 - add_model:
     name: iiwa
-    file: package://quasistatic_simulator/iiwa7_sphere_collision_push.sdf
+    file: package://quasistatic_simulator/iiwa14_sphere_collision_push.sdf
 
 - add_weld:
     parent: world
