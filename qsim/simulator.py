@@ -1,7 +1,7 @@
 import copy
 import warnings
 from typing import List, Union, Dict
-
+import pdb
 import cvxpy as cp
 import numpy as np
 from pydrake.all import (QueryObject, ModelInstanceIndex, GurobiSolver,
@@ -9,8 +9,8 @@ from pydrake.all import (QueryObject, ModelInstanceIndex, GurobiSolver,
                          AbstractValue, ExternallyAppliedSpatialForce, Context,
                          JacobianWrtVariable, RigidBody, Role,
                          PenetrationAsPointPair)
-from pydrake.systems.meshcat_visualizer import (MeshcatContactVisualizer,
-                                                ConnectMeshcatVisualizer)
+from pydrake.all import (ContactVisualizer,
+                         MeshcatVisualizer)
 from pydrake.multibody.parsing import (Parser, ProcessModelDirectives,
                                        LoadModelDirectives)
 from pydrake.multibody.plant import (
@@ -80,10 +80,10 @@ class QuasistaticSimulator:
         # visualization.
         self.internal_vis = internal_vis
         if internal_vis:
-            viz = ConnectMeshcatVisualizer(builder, scene_graph,
+            viz = MeshcatVisualizer(builder, scene_graph,
                                            role=Role.kIllustration)
             # ContactVisualizer
-            contact_viz = MeshcatContactVisualizer(
+            contact_viz = ContactVisualizer(
                 meshcat_viz=viz, plant=plant)
             builder.AddSystem(contact_viz)
             self.viz = viz
@@ -481,8 +481,8 @@ class QuasistaticSimulator:
             '''
             A and B denote the body frames of bodyA and bodyB.
             Fa/b is the contact geometry frame relative to the body to which
-                the contact geometry belongs. sdp.p_ACa is relative to frame 
-                Fa (geometry frame), not frame A (body frame). 
+                the contact geometry belongs. sdp.p_ACa is relative to frame
+                Fa (geometry frame), not frame A (body frame).
             p_ACa_A is the coordinates of the "contact" point Ca relative
                 to the body frame A expressed in frame A.
             '''
@@ -510,11 +510,11 @@ class QuasistaticSimulator:
                  an actuated body, we need dC_a_W = -dC_u_W. In contrast,
                  if a contact pair contains a body that is neither actuated nor
                  unactuated, e.g. the ground, we do not need dC_a_W = -dC_u_W.
-                
-                As CalcTangentVectors(n, nd) != - CalcTangentVectors(-n, nd), 
+
+                As CalcTangentVectors(n, nd) != - CalcTangentVectors(-n, nd),
                     care is needed to ensure that the conditions above are met.
-                    
-                The normal n_A/B_W needs to point into body A/B, respectively. 
+
+                The normal n_A/B_W needs to point into body A/B, respectively.
                 '''
                 n_A_W = sdp.nhat_BA_W
                 d_A_W = calc_tangent_vectors(n_A_W, n_d[i_c])
@@ -603,6 +603,7 @@ class QuasistaticSimulator:
                                mu_list: np.ndarray):
         assert len(my_contact_info_list) == n_c
         contact_results = ContactResults()
+        pdb.set_trace()
         i_f_start = 0
         for i_c, my_contact_info in enumerate(my_contact_info_list):
             i_f_end = i_f_start + n_d[i_c]
@@ -902,13 +903,13 @@ class QuasistaticSimulator:
         # only way I've found so far to ensure the problem is DCP (
         # disciplined convex program).
         '''
-        The original non-penetration constraint is given by 
+        The original non-penetration constraint is given by
             phi_constraints / h + J @ v >= 0
         The "standard form" in Cotler's paper is
             min. 1 / 2 * z.dot(Q).dot(z) + b.dot(z)
             s.t. G @ z <= e (or e >= G @ z).
         Rearranging the non-penetration constraint as:
-            phi_constraints / h >= -J @ v 
+            phi_constraints / h >= -J @ v
         gives
             G := -J; e := phi_constraints / h.
 
@@ -1066,7 +1067,7 @@ class QuasistaticSimulator:
         #  difference between numerical and analytic derivatives. Find out why.
         self.step_configuration(q_dict, dq_dict, unactuated_mass_scale)
         self.update_mbp_positions(q_dict)
-        self.update_contact_results(contact_info_list, beta, h, n_c, n_d, U)
+        #self.update_contact_results(contact_info_list, beta, h, n_c, n_d, U)
 
         # Gradients.
         '''
@@ -1084,7 +1085,7 @@ class QuasistaticSimulator:
         Dv_nextDq = Dv_nextDb @ DbDq
                     + Dv_nextDe @ (1 / h * Dphi_constraints_Dq)
         Dv_nextDqa_cmd = Dv_nextDb @ DbDqa_cmd,
-            - where DbDqa_cmd != np.vstack([0, Kq]).        
+            - where DbDqa_cmd != np.vstack([0, Kq]).
         '''
         self.Dv_nextDb = Dv_nextDb
         self.Dv_nextDe = Dv_nextDe

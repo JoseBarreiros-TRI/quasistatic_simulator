@@ -1,7 +1,7 @@
 import meshcat
 
 
-def SetOrthographicCameraYZ(vis: meshcat.Visualizer) -> None:
+def SetOrthographicCameraYZ(vis: meshcat) -> None:
     # use orthographic camera, show YZ plane.
     camera = meshcat.geometry.OrthographicCamera(
         left=-0.5, right=2, bottom=-1, top=4, near=-1000, far=1000)
@@ -12,7 +12,7 @@ def SetOrthographicCameraYZ(vis: meshcat.Visualizer) -> None:
         meshcat.transformations.translation_matrix([1, 0, 0]))
 
 
-def SetOrthographicCameraXY(vis: meshcat.Visualizer) -> None:
+def SetOrthographicCameraXY(vis: meshcat) -> None:
     # use orthographic camera, show xy plane.
     camera = meshcat.geometry.OrthographicCamera(
         left=-0.5, right=0.5, bottom=-0.5, top=0.5, near=-1000, far=1000)

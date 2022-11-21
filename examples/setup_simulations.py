@@ -5,12 +5,14 @@ from pydrake.all import (PiecewisePolynomial, TrajectorySource, Simulator,
                          VectorLogSink, LogVectorOutput, SpatialForce,
                          BodyIndex, InputPort, Multiplexer, DiagramBuilder,
                          PidController,
-                         MultibodyPlant, MeshcatContactVisualizer,
-                         ConnectMeshcatVisualizer)
+                         MultibodyPlant, ContactVisualizer,
+                         MeshcatVisualizer,
+                         ContactVisualizerParams)
 from qsim.parser import QuasistaticParser
 from qsim.system import *
 from robotics_utilities.iiwa_controller.robot_internal_controller import (
     RobotInternalController)
+from pydrake.geometry import StartMeshcat
 
 
 class LoadApplier(LeafSystem):
@@ -144,14 +146,21 @@ def run_quasistatic_sim(q_parser: QuasistaticParser,
 
     # visualization
     if is_visualizing:
-        meshcat_vis = ConnectMeshcatVisualizer(
+        meshcat = StartMeshcat()
+        meshcat_vis = MeshcatVisualizer.AddToBuilder(
             builder=builder,
-            scene_graph=q_sys.q_sim.get_scene_graph(),
-            output_port=q_sys.query_object_output_port,
-            draw_period=max(h, 1 / 30.), )
+            meshcat=meshcat,
+            # scene_graph=q_sys.q_sim.get_scene_graph(),
+            query_object_port=q_sys.query_object_output_port,
+            )#draw_period=max(h, 1 / 30.), )
         # role=Role.kProximity)
 
-        contact_viz = MeshcatContactVisualizer(meshcat_vis, plant=q_sys.plant)
+        # ContactVisualizer.AddToBuilder(
+        #     builder, q_sys.plant, meshcat,
+        #     ContactVisualizerParams(radius=0.005, newtons_per_meter=40.0))
+
+        #contact_viz = ContactVisualizer(meshcat_vis, plant=q_sys.plant)
+        contact_viz = ContactVisualizer(meshcat, ContactVisualizerParams(radius=0.005, newtons_per_meter=40.0))
         builder.AddSystem(contact_viz)
         builder.Connect(q_sys.contact_results_output_port,
                         contact_viz.GetInputPort("contact_results"))
@@ -266,7 +275,7 @@ def run_mbp_sim(
 
     # visualization.
     if is_visualizing:
-        meshcat_vis = ConnectMeshcatVisualizer(builder, scene_graph)
+        meshcat_vis = MeshcatVisualizer(builder, scene_graph)
 
     # logs.
     log_sinks_dict = dict()
