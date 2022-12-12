@@ -1,0 +1,26 @@
+directives:
+- add_directives:
+    file: package://quasistatic_simulator/ground.yml
+
+- add_model:
+    name: iiwa
+    file: package://quasistatic_simulator/iiwa14_sphere_collision_push.sdf
+
+- add_weld:
+    parent: world
+    child: iiwa::iiwa_link_0
+
+- add_frame:
+    name: world_to_wall_1
+    X_PF:
+        base_frame: world
+        translation: [0.8, 0.3, 0]
+        rotation: !Rpy {deg: [0., 0.0, 90.0]}
+
+- add_model:
+    name: wall_1
+    file: package://quasistatic_simulator/wall_100_002_010.sdf
+
+- add_weld:
+    parent: world_to_wall_1
+    child: wall_1::base
