@@ -106,9 +106,9 @@ Later edited by hand to:
       <axis>
         <xyz>-0 0 -1</xyz>
         <limit>
-          <lower>-3.1</lower>
-          <upper>3.1</upper>
-          <effort>2000</effort>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>40</effort>
           <velocity>0.63</velocity>
         </limit>
         <dynamics>
@@ -194,7 +194,7 @@ Later edited by hand to:
         <limit>
           <lower>0.820305</lower>
           <upper>5.46288</upper>
-          <effort>2000</effort>
+          <effort>80</effort>
           <velocity>0.63</velocity>
         </limit>
         <dynamics>
@@ -305,9 +305,9 @@ Later edited by hand to:
       <axis>
         <xyz>0 -0 1</xyz>
         <limit>
-          <lower>-3.1</lower>
-          <upper>3.1</upper>
-          <effort>2000</effort>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>40</effort>
           <velocity>0.63</velocity>
         </limit>
         <dynamics>
@@ -420,7 +420,7 @@ Later edited by hand to:
         <limit>
           <lower>0.523599</lower>
           <upper>5.75959</upper>
-          <effort>2000</effort>
+          <effort>40</effort>
           <velocity>0.63</velocity>
         </limit>
         <dynamics>
@@ -504,9 +504,9 @@ Later edited by hand to:
       <axis>
         <xyz>-0 0 -1</xyz>
         <limit>
-          <lower>-3.1</lower>
-          <upper>3.1</upper>
-          <effort>2000</effort>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>20</effort>
           <velocity>0.85</velocity>
         </limit>
         <dynamics>
@@ -592,7 +592,7 @@ Later edited by hand to:
         <limit>
           <lower>1.13446</lower>
           <upper>5.14872</upper>
-          <effort>2000</effort>
+          <effort>20</effort>
           <velocity>0.85</velocity>
         </limit>
         <dynamics>
@@ -652,9 +652,9 @@ Later edited by hand to:
       <axis>
         <xyz>0 -0 1</xyz>
         <limit>
-          <lower>-3.1</lower>
-          <upper>3.1</upper>
-          <effort>2000</effort>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>20</effort>
           <velocity>0.85</velocity>
         </limit>
         <dynamics>
