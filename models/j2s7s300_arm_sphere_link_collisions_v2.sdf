@@ -4,7 +4,7 @@
 SDF automatically generated with: gz sdf -p /my_urdf.urdf > /my_sdf.sdf
 
 Later edited by hand to:
-* add collision geometries to end effector link.
+* add collision geometries to all links
 * add velocity and effort limits
 -->
   <model name='j2s7s300_arm'>
@@ -73,7 +73,7 @@ Later edited by hand to:
           <diffuse>0.627451 0.627451 0.627451 0.8</diffuse>
         </material>
       </visual>
-      <!-- <visual name='j2s7s300_link_1_contact_visual'>
+      <visual name='j2s7s300_link_1_contact_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <sphere>
@@ -83,8 +83,8 @@ Later edited by hand to:
         <material>
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
-      </visual> -->
-      <!-- <collision name='j2s7s300_link_1_contact'>
+      </visual>
+      <collision name='j2s7s300_link_1_contact'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <sphere>
@@ -99,7 +99,7 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
+      </collision>
     </link>
     <joint name='j2s7s300_joint_1' type='revolute'>
       <child>j2s7s300_link_1</child>
@@ -147,7 +147,7 @@ Later edited by hand to:
           <diffuse>0.1788232 0.1788232 0.1788232 0.8</diffuse>
         </material>
       </visual>
-      <!-- <visual name='j2s7s300_link_2_visual2'>
+      <visual name='j2s7s300_link_2_visual2'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -169,8 +169,8 @@ Later edited by hand to:
         <material>
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
-      </visual> -->
-      <!-- <collision name='j2s7s300_link_2_contact'>
+      </visual>
+      <collision name='j2s7s300_link_2_contact'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <sphere>
@@ -185,7 +185,7 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
+      </collision>
     </link>
     <joint name='j2s7s300_joint_2' type='revolute'>
       <child>j2s7s300_link_2</child>
@@ -245,7 +245,7 @@ Later edited by hand to:
           <diffuse>0.627451 0.627451 0.627451 0.8</diffuse>
         </material>
       </visual>
-      <!-- <visual name='j2s7s300_link_3_contact_visual'>
+      <visual name='j2s7s300_link_3_contact_visual'>
         <pose>0 0.015 -0.09 0 -0 0</pose>
         <geometry>
           <sphere>
@@ -266,8 +266,8 @@ Later edited by hand to:
         <material>
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
-      </visual> -->
-      <!-- <collision name='j2s7s300_link_3_contact'>
+      </visual>
+      <collision name='j2s7s300_link_3_contact'>
         <pose>0 0.015 -0.09 0 0 0</pose>
         <geometry>
           <sphere>
@@ -282,8 +282,8 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
-      <!-- <collision name='j2s7s300_link_3_contact2'>
+      </collision>
+      <collision name='j2s7s300_link_3_contact2'>
         <pose>0 0 -0.012 0 0 0</pose>
         <geometry>
           <sphere>
@@ -298,7 +298,7 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
+      </collision>
     </link>
     <joint name='j2s7s300_joint_3' type='revolute'>
       <child>j2s7s300_link_3</child>
@@ -358,7 +358,7 @@ Later edited by hand to:
           <diffuse>0.627451 0.627451 0.627451 0.8</diffuse>
         </material>
       </visual>
-      <!-- <visual name='j2s7s300_link_4_contact_visual'>
+      <visual name='j2s7s300_link_4_contact_visual'>
         <pose>0 0.15 -0.015 0 -0 0</pose>
         <geometry>
           <sphere>
@@ -379,8 +379,8 @@ Later edited by hand to:
         <material>
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
-      </visual> -->
-      <!-- <collision name='j2s7s300_link_4_contact'>
+      </visual>
+      <collision name='j2s7s300_link_4_contact'>
         <pose>0 0.15 -0.015 0 0 0</pose>
         <geometry>
           <sphere>
@@ -395,8 +395,8 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
-      <!-- <collision name='j2s7s300_link_4_contact2'>
+      </collision>
+      <collision name='j2s7s300_link_4_contact2'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <sphere>
@@ -411,7 +411,7 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
+      </collision>
     </link>
     <joint name='j2s7s300_joint_4' type='revolute'>
       <child>j2s7s300_link_4</child>
@@ -471,7 +471,7 @@ Later edited by hand to:
           <diffuse>0.627451 0.627451 0.627451 0.8</diffuse>
         </material>
       </visual>
-      <!-- <visual name='j2s7s300_link_5_contact_visual'>
+      <visual name='j2s7s300_link_5_contact_visual'>
         <pose>0 0 -0.012 0 -0 0</pose>
         <geometry>
           <sphere>
@@ -481,8 +481,8 @@ Later edited by hand to:
         <material>
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
-      </visual> -->
-      <!-- <collision name='j2s7s300_link_5_contact'>
+      </visual>
+      <collision name='j2s7s300_link_5_contact'>
         <pose>0 0 -0.012 0 0 0</pose>
         <geometry>
           <sphere>
@@ -497,7 +497,7 @@ Later edited by hand to:
           </ode>
           </friction>
         </surface>
-      </collision> -->
+      </collision>
     </link>
     <joint name='j2s7s300_joint_5' type='revolute'>
       <child>j2s7s300_link_5</child>
