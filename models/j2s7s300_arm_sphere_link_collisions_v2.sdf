@@ -49,6 +49,7 @@ Later edited by hand to:
           <izz>0.00059816</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_1_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -84,6 +85,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_1_contact'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
@@ -100,6 +102,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
     </link>
     <joint name='j2s7s300_joint_1' type='revolute'>
       <child>j2s7s300_link_1</child>
@@ -135,6 +138,7 @@ Later edited by hand to:
           <izz>0.00247074</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_2_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -170,6 +174,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_2_contact'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
@@ -186,6 +191,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
     </link>
     <joint name='j2s7s300_joint_2' type='revolute'>
       <child>j2s7s300_link_2</child>
@@ -221,6 +227,7 @@ Later edited by hand to:
           <izz>0.000380115</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_3_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -267,6 +274,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_3_contact'>
         <pose>0 0.015 -0.09 0 0 0</pose>
         <geometry>
@@ -283,6 +291,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
       <collision name='j2s7s300_link_3_contact2'>
         <pose>0 0 -0.012 0 0 0</pose>
         <geometry>
@@ -334,6 +343,7 @@ Later edited by hand to:
           <izz>1</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_4_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -380,6 +390,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_4_contact'>
         <pose>0 0.15 -0.015 0 0 0</pose>
         <geometry>
@@ -412,6 +423,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
     </link>
     <joint name='j2s7s300_joint_4' type='revolute'>
       <child>j2s7s300_link_4</child>
@@ -447,6 +459,7 @@ Later edited by hand to:
           <izz>9.26e-05</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_5_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -482,6 +495,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_5_contact'>
         <pose>0 0 -0.012 0 0 0</pose>
         <geometry>
@@ -498,6 +512,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
     </link>
     <joint name='j2s7s300_joint_5' type='revolute'>
       <child>j2s7s300_link_5</child>
@@ -533,6 +548,7 @@ Later edited by hand to:
           <izz>0.000432132</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_6_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -568,6 +584,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_6_contact'>
         <pose>0 0 -0.015 0 0 0</pose>
         <geometry>
@@ -584,6 +601,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
     </link>
     <joint name='j2s7s300_joint_6' type='revolute'>
       <child>j2s7s300_link_6</child>
@@ -619,6 +637,7 @@ Later edited by hand to:
           <izz>1</izz>
         </inertia>
       </inertial>
+
       <visual name='j2s7s300_link_7_contact_visual'>
         <pose>0 0 0.03 0 -0 0</pose>
         <geometry>
@@ -630,6 +649,7 @@ Later edited by hand to:
           <diffuse>0.8 0.8 0.8 1.0</diffuse>
         </material>
       </visual>
+
       <collision name='j2s7s300_link_7_contact'>
         <pose>0 0 0.03 0 0 0</pose>
         <geometry>
@@ -646,6 +666,7 @@ Later edited by hand to:
           </friction>
         </surface>
       </collision>
+
     </link>
     <joint name='j2s7s300_joint_7' type='revolute'>
       <child>j2s7s300_link_7</child>
