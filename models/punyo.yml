@@ -1,0 +1,48 @@
+directives:
+- add_directives:
+    file: package://quasistatic_simulator/ground.yml
+
+- add_model:
+    name: jaco_left
+    file: package://quasistatic_simulator/punyo_arm.sdf
+
+- add_model:
+    name: jaco_right
+    file: package://quasistatic_simulator/punyo_arm.sdf
+
+- add_model:
+    name: torso
+    file: package://quasistatic_simulator/torso_0.4_0.1_0.5.sdf
+
+- add_frame:
+    name: world_left_arm_offset
+    X_PF:
+        base_frame: world
+        translation: [0, 0.27, 0.11]
+        rotation: !Rpy {deg: [0, 0, 90]}
+
+- add_frame:
+    name: world_right_arm_offset
+    X_PF:
+        base_frame: world
+        translation: [0, -0.27, 0.11]
+        rotation: !Rpy {deg: [0, 0, 90]}
+
+- add_frame:
+    name: world_torso
+    X_PF:
+        base_frame: world
+        translation: [-0.03, 0, 0.20]
+        rotation: !Rpy {deg: [0, 0, 90]}
+
+- add_weld:
+    parent: world_left_arm_offset
+    child: jaco_left::base
+
+- add_weld:
+    parent: world_right_arm_offset
+    child: jaco_right::base
+
+- add_weld:
+    parent: world_torso
+    child: torso::base
