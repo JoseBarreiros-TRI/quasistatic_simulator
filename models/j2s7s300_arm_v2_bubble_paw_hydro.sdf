@@ -458,7 +458,7 @@ Later edited by hand to:
         <pose>-0.088 0.09 0 1.5707 0 1.91986</pose>
         <geometry>
           <sphere>
-            <radius>0.0415</radius>
+            <radius>0.05</radius>
           </sphere>
         </geometry>
         <material>
@@ -469,7 +469,7 @@ Later edited by hand to:
         <pose>-0.088 0.09 0 1.5707 0 1.91986</pose>
         <geometry>
           <sphere>
-            <radius>0.0415</radius>
+            <radius>0.05</radius>
           </sphere>
         </geometry>
         <drake:proximity_properties>
