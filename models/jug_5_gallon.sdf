@@ -15,7 +15,7 @@
           <izz>0.01394175</izz>
         </inertia>
       </inertial>
-        <visual name="jug_visual">
+      <visual name="jug_visual">
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -23,31 +23,267 @@
           </mesh>
         </geometry>
         <material>
-          <diffuse>0.4 0.4 0.4 1.0</diffuse>
+          <diffuse>0.4 0.4 0.4 0.5</diffuse>
+        </material>
+      </visual>
+
+      <visual name="jug_contact_visual">
+        <pose>0 0 -0.2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.133</radius>
+            <length>0.06</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
         </material>
       </visual>
       <collision name="jug_collision">
-        <pose>0 0 -0.03 0 0 0</pose>
+        <pose>0 0 -0.2 0 0 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.135</radius>
-            <length>0.40</length>
+            <radius>0.133</radius>
+            <length>0.06</length>
           </cylinder>
         </geometry>
         <surface>
           <friction>
             <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
             </ode>
           </friction>
         </surface>
       </collision>
+
+      <visual name="jug_contact_visual_2">
+        <pose>0 0 -0.115 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.127</radius>
+            <length>0.12</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_2">
+        <pose>0 0 -0.115 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.127</radius>
+            <length>0.12</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_contact_visual_3">
+        <pose>0 0 -0.04 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.133</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_3">
+        <pose>0 0 -0.04 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.133</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_contact_visual_5">
+        <pose>0 0 0.03 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.127</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_5">
+        <pose>0 0 0.03 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.127</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_contact_visual_6">
+        <pose>0 0 0.07 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.133</radius>
+            <length>0.038</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_6">
+        <pose>0 0 0.07 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.133</radius>
+            <length>0.038</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_contact_visual_7">
+        <pose>0 0 0.095 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.127</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_7">
+        <pose>0 0 0.095 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.127</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_contact_visual_8">
+        <pose>0 0 0.115 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.105</radius>
+            <length>0.06</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_8">
+        <pose>0 0 0.115 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.105</radius>
+            <length>0.06</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_contact_visual_9">
+        <pose>0 0 0.145 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
+      <collision name="jug_collision_9">
+        <pose>0 0 0.145 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="jug_top_contact_visual">
+        <pose>0 0 0.201 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.027</radius>
+            <length>0.065</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.6 0.8 0.9</diffuse>
+        </material>
+      </visual>
       <collision name="jug_top_collision">
         <pose>0 0 0.201 0 0 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.03</radius>
+            <radius>0.027</radius>
             <length>0.065</length>
           </cylinder>
         </geometry>
