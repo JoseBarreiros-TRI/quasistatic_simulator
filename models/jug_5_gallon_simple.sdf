@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <sdf version="1.7">
   <model name="jug_5_gallon">
-    <!-- This is a model of an empty 5 gallon water jug. -->
-    <!-- The model for a jug of uniform density. -->
+      <!-- This is a model of an empty 5 gallon water jug. -->
+    <!-- The moment of inertia is for a solid cylinder  -->
+    <!-- with uniform density. -->
     <link name="jug">
       <inertial>
         <mass>0.8</mass>
