@@ -1,0 +1,20 @@
+model_directive: package://quasistatic_simulator/punyo.yml
+robots:
+  -
+    name: jaco_left
+    Kp: [800, 600, 600, 600, 400, 200, 200]
+  -
+    name: jaco_right
+    Kp: [800, 600, 600, 600, 400, 200, 200]
+
+objects:
+  -
+    name: jug
+    file: package://quasistatic_simulator/jug_5_gallon.sdf
+
+quasistatic_sim_params:
+  gravity: [0, 0, -9.8]
+  nd_per_contact: 4
+  contact_detection_tolerance: 0.2
+  is_quasi_dynamic: True
+  unactuated_mass_scale: 1
