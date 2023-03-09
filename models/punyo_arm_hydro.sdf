@@ -139,7 +139,7 @@ Later edited by hand to:
         <pose>0 -0.14 0 1.507 0 0</pose>
         <geometry>
           <cylinder>
-            <length>0.15</length>
+            <length>0.12</length>
             <radius>0.085</radius>
           </cylinder>
         </geometry>
@@ -151,13 +151,13 @@ Later edited by hand to:
         <pose>0 -0.14 0 1.507 0 0</pose>
         <geometry>
           <cylinder>
-            <length>0.15</length>
+            <length>0.12</length>
             <radius>0.085</radius>
           </cylinder>
         </geometry>
         <drake:proximity_properties>
           <drake:compliant_hydroelastic/>
-          <drake:hydroelastic_modulus>4.0e+4</drake:hydroelastic_modulus>
+          <drake:hydroelastic_modulus>3.2e+4</drake:hydroelastic_modulus>
           <drake:hunt_crossley_dissipation>10</drake:hunt_crossley_dissipation>
           <drake:mesh_resolution_hint>0.005</drake:mesh_resolution_hint>
           <!-- Both mu_dynamic and mu_static are used in Continuous system.
@@ -232,7 +232,7 @@ Later edited by hand to:
         <pose>0 0 -0.065 0 0 0</pose>
         <geometry>
           <cylinder>
-            <length>0.15</length>
+            <length>0.12</length>
             <radius>0.085</radius>
           </cylinder>
         </geometry>
@@ -244,13 +244,13 @@ Later edited by hand to:
         <pose>0 0 -0.065 0 0 0</pose>
         <geometry>
           <cylinder>
-            <length>0.15</length>
+            <length>0.12</length>
             <radius>0.085</radius>
           </cylinder>
         </geometry>
         <drake:proximity_properties>
           <drake:compliant_hydroelastic/>
-          <drake:hydroelastic_modulus>4.0e+4</drake:hydroelastic_modulus>
+          <drake:hydroelastic_modulus>3.2e+4</drake:hydroelastic_modulus>
           <drake:hunt_crossley_dissipation>10</drake:hunt_crossley_dissipation>
           <drake:mesh_resolution_hint>0.005</drake:mesh_resolution_hint>
           <!-- Both mu_dynamic and mu_static are used in Continuous system.
@@ -343,7 +343,7 @@ Later edited by hand to:
         </geometry>
         <drake:proximity_properties>
           <drake:compliant_hydroelastic/>
-          <drake:hydroelastic_modulus>4.0e+4</drake:hydroelastic_modulus>
+          <drake:hydroelastic_modulus>3.2e+4</drake:hydroelastic_modulus>
           <drake:hunt_crossley_dissipation>10</drake:hunt_crossley_dissipation>
           <drake:mesh_resolution_hint>0.005</drake:mesh_resolution_hint>
           <!-- Both mu_dynamic and mu_static are used in Continuous system.
@@ -474,18 +474,6 @@ Later edited by hand to:
         </material>
       </visual>
 
-      <visual name='floatie_1.0_on_links_5_and_6_mesh'>
-        <pose>0 0.09 0 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>punyo_floatie_1_0.obj</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>0.2 0.2 0.8 0.1</diffuse>
-        </material>
-      </visual>
       <visual name='floatie_1.0_on_links_5_and_6_visual'>
         <pose>0 0.09 0 1.55 0 0</pose>
         <geometry>
@@ -508,7 +496,7 @@ Later edited by hand to:
         </geometry>
         <drake:proximity_properties>
           <drake:compliant_hydroelastic/>
-          <drake:hydroelastic_modulus>2.0e+4</drake:hydroelastic_modulus>
+          <drake:hydroelastic_modulus>3.2e+4</drake:hydroelastic_modulus>
           <drake:hunt_crossley_dissipation>10</drake:hunt_crossley_dissipation>
           <drake:mesh_resolution_hint>0.005</drake:mesh_resolution_hint>
           <!-- Both mu_dynamic and mu_static are used in Continuous system.
