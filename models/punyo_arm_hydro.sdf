@@ -626,7 +626,7 @@ Later edited by hand to:
         </geometry>
         <drake:proximity_properties>
           <drake:compliant_hydroelastic/>
-          <drake:hydroelastic_modulus>1.0e+4</drake:hydroelastic_modulus>
+          <drake:hydroelastic_modulus>4.0e+4</drake:hydroelastic_modulus>
           <drake:hunt_crossley_dissipation>10</drake:hunt_crossley_dissipation>
           <drake:mesh_resolution_hint>0.005</drake:mesh_resolution_hint>
           <!-- Both mu_dynamic and mu_static are used in Continuous system.
