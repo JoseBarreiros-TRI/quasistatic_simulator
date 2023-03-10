@@ -1,0 +1,14 @@
+directives:
+  - add_model:
+      name: ground
+      file: package://quasistatic_simulator/ground_small_box.sdf
+
+  - add_frame:
+      name: ground_world_offset
+      X_PF:
+        base_frame: world
+        translation: [ 0.05, 0, -0.05001]
+
+  - add_weld:
+      parent: ground_world_offset
+      child: ground::ground

@@ -2,7 +2,7 @@ model_directive: package://quasistatic_simulator/jaco_sphere_collision_push.yml
 robots:
   -
     name: jaco
-    Kp: [800, 600, 600, 600, 400, 200, 200]
+    Kp: [500, 500, 250, 500, 250, 250, 250]
 
 objects:
   -
