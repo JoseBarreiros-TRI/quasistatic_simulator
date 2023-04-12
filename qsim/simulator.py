@@ -1284,7 +1284,7 @@ class QuasistaticSimulator:
         Dv_nextDq = Dv_nextDb @ DbDq
                     + Dv_nextDe @ (1 / h * Dphi_constraints_Dq)
         Dv_nextDqa_cmd = Dv_nextDb @ DbDqa_cmd,
-            - where DbDqa_cmd != np.vstack([0, Kq]).        
+            - where DbDqa_cmd != np.vstack([0, Kq]).
         """
         self.Dv_nextDb = Dv_nextDb
         self.Dv_nextDe = Dv_nextDe
