@@ -2,7 +2,7 @@ import copy
 import warnings
 from enum import IntEnum
 from typing import List, Union, Dict
-
+import pdb
 import cvxpy as cp
 import numpy as np
 from pydrake.all import (
@@ -260,6 +260,7 @@ class QuasistaticSimulator:
         # For contact force visualization. It is updated when
         #   self.calc_contact_results is called.
         self.contact_results = ContactResults()
+        # self.contact_results.set_plant(plant)
 
         # For system state visualization. It is updated when
         #   self.update_configuration is called.
