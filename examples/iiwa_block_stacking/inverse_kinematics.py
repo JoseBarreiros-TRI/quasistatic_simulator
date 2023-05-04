@@ -7,7 +7,7 @@ from pydrake.all import (
     PiecewiseQuaternionSlerp,
     PiecewisePolynomial,
 )
-from pydrake.solvers import mathematicalprogram as mp
+from pydrake.solvers import MathematicalProgram as mp
 
 
 def calc_iwa_trajectory_for_point_tracking(
