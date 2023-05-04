@@ -12,7 +12,7 @@ directives:
 
 - add_model:
     name: torso
-    file: package://quasistatic_simulator/torso_0.4_0.1_0.5.sdf
+    file: package://quasistatic_simulator/torso_0.3_0.1_0.5.sdf
 
 - add_frame:
     name: world_left_arm_offset

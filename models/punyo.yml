@@ -12,7 +12,7 @@ directives:
 
 - add_model:
     name: torso
-    file: package://quasistatic_simulator/torso_0.4_0.1_0.5.sdf
+    file: package://quasistatic_simulator/torso_0.3_0.1_0.5.sdf
 
 - add_frame:
     name: world_left_arm_offset
@@ -32,7 +32,7 @@ directives:
     name: world_torso
     X_PF:
         base_frame: world
-        translation: [-0.03, 0, 0.20]
+        translation: [0.045, 0, 0.20]
         rotation: !Rpy {deg: [0, 0, 90]}
 
 - add_weld:
