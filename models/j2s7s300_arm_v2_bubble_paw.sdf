@@ -26,7 +26,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/base.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/base.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -53,7 +53,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/shoulder.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/shoulder.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -65,7 +65,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/ring_big.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/ring_big.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -112,7 +112,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/arm_half_1.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/arm_half_1.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -124,7 +124,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/ring_big.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/ring_big.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -171,7 +171,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/arm_half_2.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/arm_half_2.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -183,7 +183,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/ring_big.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/ring_big.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -230,7 +230,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/forearm.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/forearm.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -242,7 +242,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/ring_small.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/ring_small.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -289,7 +289,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/wrist_spherical_1.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/wrist_spherical_1.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -301,7 +301,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/ring_small.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/ring_small.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -348,7 +348,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/wrist_spherical_2.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/wrist_spherical_2.obj</uri>
           </mesh>
         </geometry>
         <material>
@@ -360,7 +360,7 @@ Later edited by hand to:
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://drake/manipulation/models/jaco_description/meshes/ring_small.obj</uri>
+            <uri>package://drake_models/jaco_description/meshes/ring_small.obj</uri>
           </mesh>
         </geometry>
         <material>

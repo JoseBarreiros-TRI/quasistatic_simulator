@@ -4,8 +4,8 @@ from typing import Dict
 import numpy as np
 import meshcat
 
-from pydrake.solvers import mathematicalprogram as mp
-from pydrake.solvers.gurobi import GurobiSolver
+from pydrake.solvers import MathematicalProgram as mp
+from pydrake.solvers import GurobiSolver
 from pydrake.all import OsqpSolver
 
 from qsim_old.meshcat_camera_utils import SetOrthographicCameraXY

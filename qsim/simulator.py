@@ -35,7 +35,7 @@ from pydrake.multibody.plant import (
     MultibodyPlant,
     AddMultibodyPlantSceneGraph,
 )
-from pydrake.solvers import mathematicalprogram as mp
+from pydrake.solvers import MathematicalProgram as mp
 from pydrake.systems.framework import DiagramBuilder
 from qsim_cpp import (
     GradientMode,
